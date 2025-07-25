@@ -6,43 +6,51 @@ const products = [
     {
         name: 'BEAKER',
         desc: '100ml, 250ml, 500ml, 1000ml',
-        img: 'https://picsum.photos/id/1021/400/180',
+        img: 'https://images.pexels.com/photos/4021087/pexels-photo-4021087.jpeg?auto=compress&cs=tinysrgb&w=400&h=180',
+        link: '/products/beaker'
     },
     {
         name: 'FLASK',
         desc: '250ml, 500ml, 1000ml',
-        img: 'https://picsum.photos/id/1022/400/180',
+        img: 'https://images.pexels.com/photos/4021088/pexels-photo-4021088.jpeg?auto=compress&cs=tinysrgb&w=400&h=180',
+        link: '/products/flask'
     },
     {
         name: 'TEST TUBE',
         desc: '5ml, 10ml, 20ml, 50ml',
-        img: 'https://picsum.photos/id/1023/400/180',
+        img: 'https://images.pexels.com/photos/4021089/pexels-photo-4021089.jpeg?auto=compress&cs=tinysrgb&w=400&h=180',
+        link: '/products/test-tube'
     },
     {
         name: 'DOUBLE SURFACE CONDENSER',
         desc: '100mm, 150mm, 200mm, 300mm, 400mm, 500mm',
-        img: 'https://picsum.photos/id/1024/400/180',
+        img: 'https://images.pexels.com/photos/4021090/pexels-photo-4021090.jpeg?auto=compress&cs=tinysrgb&w=400&h=180',
+        link: '/products/condenser'
     },
     {
         name: 'BURETTES (GLASS STOPCOCK/ROTAFLOW)',
         desc: '5ml, 10ml, 25ml, 50ml, 100ml',
-        img: 'https://picsum.photos/id/1025/400/180',
+        img: 'https://images.pexels.com/photos/4021091/pexels-photo-4021091.jpeg?auto=compress&cs=tinysrgb&w=400&h=180',
+        link: '/products/burettes'
     },
     {
         name: 'PIPETTES (GRADUATED/VOLUMETRIC)',
         desc: '1.0ml, 2.0ml, 5.0ml, 10.0ml, 25.0ml, 50.0ml',
-        img: 'https://picsum.photos/id/1026/400/180',
+        img: 'https://images.pexels.com/photos/4021092/pexels-photo-4021092.jpeg?auto=compress&cs=tinysrgb&w=400&h=180',
+        link: '/products/pipettes'
     },
     {
         name: 'CULTURE TUBES (CLEAR GLASS/AMBER(RB))',
         desc: '5ml, 10ml, 30ml, 60ml, 150ml',
-        img: 'https://picsum.photos/id/1027/400/180',
+        img: 'https://images.pexels.com/photos/4021093/pexels-photo-4021093.jpeg?auto=compress&cs=tinysrgb&w=400&h=180',
+        link: '/products/culture-tubes-rb'
     },
     {
         name: 'CULTURE TUBES (CLEAR GLASS/AMBER(FB))',
         desc: '5ml, 10ml, 30ml, 60ml, 150ml',
-        img: 'https://picsum.photos/id/1028/400/180',
-    },
+        img: 'https://images.pexels.com/photos/4021094/pexels-photo-4021094.jpeg?auto=compress&cs=tinysrgb&w=400&h=180',
+        link: '/products/culture-tubes-fb'
+    }
 ];
 
 export default function Products() {
