@@ -83,7 +83,7 @@ export default function Contact() {
                     </div>
                     <div style={{ marginBottom: 16, fontSize: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
                         <span style={{ fontSize: 28 }}>🏢</span>
-                        #331/332 Kaccha Bazar Ambala Cantt, Haryana, 133001
+                        Ambala Cantt, Haryana, 133001
                     </div>
                     <div style={{ marginBottom: 16, fontSize: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
                         <span style={{ fontSize: 28 }}>📧</span>
