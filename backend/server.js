@@ -34,8 +34,12 @@ app.use(express.json());
 // app.use('/api/contact', limiter);
 
 app.use(cors({
-    origin: '*', // Or specific domain: 'https://your-frontend.com'
+    origin: '*',
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type'],
 }));
+
+app.options('*', cors()); // <-- this line is key for preflight
 app.get('/', (req, res) => {
     res.send('Reyansh Backend API Running');
 });
