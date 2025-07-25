@@ -5,7 +5,7 @@ export default function Footer() {
         <footer style={{ background: '#fff', borderTop: '1px solid #eee', padding: '2vw 0', fontSize: 16 }}>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', maxWidth: 1400, margin: '0 auto', gap: 32, padding: '2vw 5vw' }}>
                 <div style={{ minWidth: 220, flex: 1, textAlign: 'center' }}>
-                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=100&q=80" alt="Scientific Glassware Logo" width={60} height={60} style={{ borderRadius: '50%', marginBottom: 8 }} />
+                    <img src="./4118.jpg" alt="Scientific Glassware Logo" width={60} height={60} style={{ borderRadius: '50%', marginBottom: 8 }} />
                     <div style={{ fontWeight: 'bold', marginTop: 8 }}>Krishnawanshi
                         Overseas</div>
                     <div style={{ marginTop: 8, fontSize: 15, textDecoration: 'underline' }}>ISO Certified Scientific Company</div>
