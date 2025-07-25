@@ -5,22 +5,30 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 
-const allowedOrigins = [
-  'https://reyansh-acharya.vercel.app',
-  'https://reyansh-glwz.vercel.app',
-];
+// const allowedOrigins = [
+//   'https://reyansh-acharya.vercel.app',
+//   'https://reyansh-glwz.vercel.app',
+// ];
 
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     if (!origin || allowedOrigins.includes(origin)) {
+//       callback(null, true); // Allow the request
+//     } else {
+//       callback(new Error('Not allowed by CORS'));
+//     }
+//   },
+//   methods: ['GET', 'POST', 'OPTIONS'],
+//   allowedHeaders: ['Content-Type'],
+// };
 const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true); // Allow the request
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: '*',
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
 };
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 
 app.use(cors(corsOptions));
