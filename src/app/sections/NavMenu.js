@@ -14,7 +14,13 @@ export default function NavMenu() {
     }
     function handleBrochure(e) {
         e.preventDefault();
-        window.open('https://reyansh.onrender.com/brochure.pdf', '_blank');
+        const link = document.createElement('a');
+        link.href = '/sample-local-pdf.pdf';
+        link.download = 'brochure.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
         setMenuOpen(false);
     }
     return (
