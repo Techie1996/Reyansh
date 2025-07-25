@@ -8,30 +8,34 @@ app.use(express.json());
 // CORS configuration
 
 // CORS configuration
-const corsOptions = {
-    origin: 'https://reyansh-glwz.vercel.app',
-    methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type'],
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//     origin: 'https://reyansh-glwz.vercel.app',
+//     methods: ['GET', 'POST', 'OPTIONS'],
+//     allowedHeaders: ['Content-Type'],
+// };
+// app.use(cors(corsOptions));
 
-// Custom middleware to validate origin
-app.use((req, res, next) => {
-    const allowedOrigin = 'https://reyansh-glwz.vercel.app';
-    const origin = req.headers.origin;
-    if (origin !== allowedOrigin) {
-        return res.status(403).json({ success: false, error: 'Unauthorized origin' });
-    }
-    next();
-});
+// // Custom middleware to validate origin
+// app.use((req, res, next) => {
+//     const allowedOrigin = 'https://reyansh-glwz.vercel.app';
+//     const origin = req.headers.origin;
+//     if (origin !== allowedOrigin) {
+//         return res.status(403).json({ success: false, error: 'Unauthorized origin' });
+//     }
+//     next();
+// });
 
-// Optional: Add rate-limiting
-const rateLimit = require('express-rate-limit');
-const limiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100, // Limit each IP to 100 requests per windowMs
-});
-app.use('/api/contact', limiter);
+// // Optional: Add rate-limiting
+// const rateLimit = require('express-rate-limit');
+// const limiter = rateLimit({
+//     windowMs: 15 * 60 * 1000, // 15 minutes
+//     max: 100, // Limit each IP to 100 requests per windowMs
+// });
+// app.use('/api/contact', limiter);
+
+app.use(cors({
+    origin: '*', // Or specific domain: 'https://your-frontend.com'
+}));
 app.get('/', (req, res) => {
     res.send('Reyansh Backend API Running');
 });
