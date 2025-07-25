@@ -7,7 +7,7 @@ export default function HeroHeader() {
         <header style={{ borderBottom: '1px solid #eee', background: '#fff', position: 'relative', zIndex: 10 }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '2rem 5vw', maxWidth: 1400, margin: '0 auto', position: 'relative', zIndex: 2 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                    <Image src="/window.svg" alt="Krishnawanshi Overseas Logo" width={60} height={60} />
+                    <img src="./4118.jpg" alt="Krishnawanshi Overseas Logo" width={60} height={60} />
                     <div style={{ fontWeight: 'bold', fontSize: 24, lineHeight: 1.1, color: '#111' }}>
                         Krishnawanshi<br />Overseas
                     </div>
@@ -17,7 +17,7 @@ export default function HeroHeader() {
             <section id="home" style={{ position: 'relative', width: '100%', minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', background: '#fff' }}>
                 {/* Background image */}
                 <img
-                    src="https://images.unsplash.com/photo-1517971071642-34a2d3eccb5e?auto=format&fit=crop&w=1200&q=80"
+                    src="/h.jpg"
                     alt="Scientific Glassware Background"
                     style={{
                         position: 'absolute',

@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 
 const products = [
     {
@@ -47,6 +48,8 @@ const products = [
 export default function Products() {
     return (
         <section id="products" style={{ background: '#111', color: '#fff', padding: '5vw 0' }}>
+            <Link href="/" className="nav-back-desktop" style={{ background: 'transparent', color: '#fff', padding: '0.5rem 2rem', borderRadius: 24, fontWeight: 'bold', textDecoration: 'none', fontSize: 18, marginLeft: 16 }}>Back</Link>
+
             <h2 style={{
                 textAlign: 'center',
                 fontSize: '3.2rem',

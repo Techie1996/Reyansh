@@ -25,13 +25,13 @@ export default function About() {
                     </div>
                 </div>
                 <div style={{ flex: 1, minWidth: 280, maxWidth: 400, textAlign: 'center' }}>
-                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Scientific Glassware" width={350} height={250} style={{ borderRadius: 12, objectFit: 'cover' }} />
+                    <img src="./laboratory-supplies-medical-work.jpg" alt="Scientific Glassware" width={350} height={250} style={{ borderRadius: 12, objectFit: 'cover' }} />
                 </div>
             </section>
             {/* Company Goel Section */}
             <section style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 32, padding: '2vw 0 5vw 0', background: '#fff' }}>
                 <div style={{ flex: 1, minWidth: 280, maxWidth: 500, textAlign: 'center' }}>
-                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Colorful Glassware" width={420} height={180} style={{ borderRadius: 8, objectFit: 'contain', background: '#fff' }} />
+                    <img src="./48448.jpg" alt="Colorful Glassware" width={420} height={180} style={{ borderRadius: 8, objectFit: 'contain', background: '#fff' }} />
                 </div>
                 <div style={{ flex: 1, minWidth: 280, maxWidth: 600, textAlign: 'left', padding: '0 2vw' }}>
                     <h2 style={{ color: '#2979ff', fontWeight: 800, fontSize: '2rem', marginBottom: 16, letterSpacing: 1 }}>COMPANY GOEL</h2>
