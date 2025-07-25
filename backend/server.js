@@ -5,14 +5,18 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 
-// ✅ FIXED CORS SETUP
 const corsOptions = {
-  origin: '*',
+  origin: [
+    'https://reyansh-acharya.vercel.app',
+    'https://reyansh-glwz.vercel.app'
+  ],
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
 };
+
 app.use(cors(corsOptions));
-app.options('*', cors(corsOptions)); // This is critical
+app.options('*', cors(corsOptions));
+
 
 app.get('/', (req, res) => {
     res.send('Reyansh Backend API Running');
