@@ -93,7 +93,7 @@ export default function Contact() {
                     </div>
                     <div style={{ marginBottom: 16, fontSize: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
                         <span style={{ fontSize: 28 }}>📞</span>
-                        +91- 9034339343, 7404339343
+                        +91- 989699933
                     </div>
                     <div style={{ marginBottom: 16 }}>
                         <b>Follow us on Social</b><br />
