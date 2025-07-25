@@ -8,6 +8,9 @@ app.use(express.json());
 app.use(cors({
     origin: '*',
 }));
+app.get('/', (req, res) => {
+    res.send('Reyansh Backend API Running');
+});
 
 
 app.post('/api/contact', async (req, res) => {
