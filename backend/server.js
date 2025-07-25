@@ -5,9 +5,13 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 // app.use(cors());
-app.use(cors({
+const corsOptions = {
     origin: '*',
-}));
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type'],
+};
+
+app.use(cors(corsOptions));
 app.get('/', (req, res) => {
     res.send('Reyansh Backend API Running');
 });
